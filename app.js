@@ -44,7 +44,7 @@ function showNotes() {
         html += `
         <div class="noteCard my-2 mx-2 card" style="width : 18rem;">
             <div class="card-body">
-                <h5 class="card-title font">${element.title}</h5>
+                <h5 class="card-title ctitle font">${element.title}</h5>
                 <hr>
                 <div>
                 <p class="card-text"> ${element.text}</p>
@@ -83,8 +83,8 @@ search.addEventListener("input", function () {
     let noteCard = document.getElementsByClassName("noteCard");
     Array.from(noteCard).forEach(function (element) {
         let cardTxt = element.getElementsByTagName("p")[0].innerText;
-        let cardTitle = element.getElementsByTagName("h5")[0].innerText;
-        if (cardTxt.includes(inputVal) || cardTitle.includes(inputVal)) {
+        let cardTitle = element.getElementsByClassName("ctitle")[0].innerText;
+        if (cardTitle.includes(inputVal) ||cardTxt.includes(inputVal) ) {
             element.style.display = "block";
         }
         else {
