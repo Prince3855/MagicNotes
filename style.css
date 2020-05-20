@@ -1,0 +1,76 @@
+body{
+    background-image:url("backImg.jpg");
+}
+h2{
+    color: rgb(241, 238, 234);
+    font-family: 'Lobster', cursive;
+    margin: 3%;
+    text-align: center;
+}
+h1{
+    color: rgb(241, 238, 234);
+    margin:25px;
+    font-family: 'Lobster', cursive;
+}
+.mycard ,#notes div {
+    
+    border-radius: 10px;
+    border: 1px outset #28a745;
+    background-color: #343a40!important;
+}
+#addTxt{
+    border-radius: 5px;
+    font-family: 'Cormorant Garamond', serif;
+}
+.card-text,#addTxt,#addTitle{
+    background-color:black;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+}
+.font{
+    font-family: 'Lobster', cursive;
+}
+hr{  
+    height: 0px;
+    border: 1px inset #28a745;
+}
+
+.btn1{
+    border: 2px outset #28a745;
+    color:#28a745 ;
+    display: block;
+    margin: 3% auto;
+}
+.card-text,#addTxt,#addTitle{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 140%;
+    border: 1px solid #28a745;
+    color: white;
+}
+h5{
+    color: white;
+}
+.card-title{
+    color: white;
+}
+.btn-primary,.btn1 {
+    color: #15ce40;
+    background-color: #343a40;
+    border: 2px outset #28a745;
+    display: block;
+    margin: 3% auto;
+}
+.btn1:hover,.btn-primary:hover{
+    color: white;
+    background-color:#28a745;
+    border-color:#28a745 ;
+}
+.card-text{
+    border: 1px inset #28a745;
+}
+#searchTxt{
+    background-color: black;
+    color: white;
+    border: 1px outset #28a745;
+}
