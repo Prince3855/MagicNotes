@@ -79,11 +79,11 @@ function deleteNote(index) {
 //search note
 let search = document.getElementById("searchTxt");
 search.addEventListener("input", function () {
-    let inputVal = search.value;
+    let inputVal = search.value.toLowerCase();
     let noteCard = document.getElementsByClassName("noteCard");
     Array.from(noteCard).forEach(function (element) {
-        let cardTxt = element.getElementsByTagName("p")[0].innerText;
-        let cardTitle = element.getElementsByClassName("ctitle")[0].innerText;
+        let cardTxt = element.getElementsByTagName("p")[0].innerText.toLowerCase();
+        let cardTitle = element.getElementsByClassName("ctitle")[0].innerText.toLowerCase();
         if (cardTitle.includes(inputVal) ||cardTxt.includes(inputVal) ) {
             element.style.display = "block";
         }
