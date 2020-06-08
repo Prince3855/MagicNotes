@@ -1,5 +1,6 @@
 body{
     background-image:url("backImg.jpg");
+    background-repeat: repeat;
 }
 h2{
     color: rgb(241, 238, 234);
