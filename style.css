@@ -1,6 +1,11 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 body{
-    background-image:url("backImg.jpg");
-    background-repeat: repeat;
+    background:url("backImg.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
 h2{
     color: rgb(241, 238, 234);
