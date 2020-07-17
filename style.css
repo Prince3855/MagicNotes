@@ -81,8 +81,6 @@ h5{
     border: 1px outset #28a745;
 }
 #notes{
-    display:flex;
-     flex-direction :row;
-    justify-content : center;
-    align-items :center;
+    display: flex;
+  justify-content: space-around;
 }
