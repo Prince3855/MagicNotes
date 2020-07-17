@@ -82,7 +82,7 @@ h5{
 }
 #notes{
     display:flex;
+     flex-direction :row;
     justify-content : center;
-    margin :auto;
-    flex-direction :row;
+    text-align :center;
 }
