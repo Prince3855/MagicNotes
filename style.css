@@ -80,3 +80,9 @@ h5{
     color: white;
     border: 1px outset #28a745;
 }
+#notes{
+    display:flex;
+    justify-content : center;
+    margin :auto;
+    flex-direction :row;
+}
