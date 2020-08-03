@@ -44,7 +44,7 @@ function showNotes() {
         html += `
         <div class="noteCard my-2 mx-2 card" style="width : 18rem;">
             <div class="card-body">
-                <h5 class="card-title ctitle font"><pre>${element.title}</pre></h5>
+                <h5 class="card-title ctitle font">${element.title}</h5>
                 <hr>
                 <div>
                 <pre class="card-text"> ${element.text} </pre>
