@@ -44,10 +44,10 @@ function showNotes() {
         html += `
         <div class="noteCard my-2 mx-2 card" style="width : 18rem;">
             <div class="card-body">
-                <h5 class="card-title ctitle font">${element.title}</h5>
+                <h5 class="card-title ctitle font"><pre>${element.title}</pre></h5>
                 <hr>
                 <div>
-                <p class="card-text"> ${element.text}</p>
+                <p class="card-text"><pre> ${element.text} </pre></p>
                 </div>
                 <button  id="${index}" onclick="deleteNote(this.id)" class="btn btn-primary font">Delete</button>
             </div>
