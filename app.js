@@ -47,7 +47,7 @@ function showNotes() {
                 <h5 class="card-title ctitle font">${element.title}</h5>
                 <hr>
                 <div>
-                <pre class="card-text"> ${element.text} </pre>
+                <pre class="card-text p-1"> ${element.text} </pre>
                 </div>
                 <button  id="${index}" onclick="deleteNote(this.id)" class="btn btn-primary font">Delete</button>
             </div>
