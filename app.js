@@ -47,7 +47,7 @@ function showNotes() {
                 <h5 class="card-title ctitle font"><pre>${element.title}</pre></h5>
                 <hr>
                 <div>
-                <p class="card-text"><pre> ${element.text} </pre></p>
+                <pre class="card-text"> ${element.text} </pre>
                 </div>
                 <button  id="${index}" onclick="deleteNote(this.id)" class="btn btn-primary font">Delete</button>
             </div>
@@ -82,7 +82,7 @@ search.addEventListener("input", function () {
     let inputVal = search.value.toLowerCase();
     let noteCard = document.getElementsByClassName("noteCard");
     Array.from(noteCard).forEach(function (element) {
-        let cardTxt = element.getElementsByTagName("p")[0].innerText.toLowerCase();
+        let cardTxt = element.getElementsByTagName("pre")[0].innerText.toLowerCase();
         let cardTitle = element.getElementsByClassName("ctitle")[0].innerText.toLowerCase();
         if (cardTitle.includes(inputVal) ||cardTxt.includes(inputVal) ) {
             element.style.display = "block";
